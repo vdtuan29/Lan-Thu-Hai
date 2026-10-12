@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="robots" content="index,follow">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Tiêu đề</title>
+        <meta name="viewpots" content="width=device-width,initial-scale=1.0">
+        <title>Calm Zen Sound</title>
         <meta name="description" content="Mô tả trang web">
         <meta name="keyword" content="Từ khoa trang web">
         <meta name="author" content="VuDucTuan">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleMot.css">
     </head>
     <body>
         <header>
@@ -86,6 +86,30 @@
             <div class="danhNgon">Quảng cáo</div>
             </div>
             <div class="chanBaiViet">Nút tiếp theo hoặc Trang trước</div>
+            <div class="maTheoDoi">
+                <span style="font-size: 16px; color: #eeeeee; margin-right: 5px;">CZS:</span>
+    <span id="view-count" style="font-size: 16px; font-weight: bold; color: #eeeeee;">Đang tải...</span>
+    <script>
+    function loadPageViews() {
+        // Tên định danh độc nhất dựa theo web của bạn
+        const siteId = "dtuan29_github_io_counter"; // Có thể sửa lại 
+        
+        fetch(`https://getloli.com{siteId}`)
+            .then(response => response.json())
+            .then(data => {
+                // Đổ số lượt xem thực tế vào thẻ span
+                document.getElementById("view-count").innerText = data.value;
+            })
+            .catch(error => {
+                console.error("Lỗi tải lượt xem:", error);
+                document.getElementById("view-count").innerText = "1";
+            });
+    }
+
+    // Tự động chạy khi trang tải xong
+    window.onload = loadPageViews;
+</script>
+            </div>
         </main>
         <footer>
             <p>&copy; 2026 Calm Zen Sound . All rights reserved</p>
