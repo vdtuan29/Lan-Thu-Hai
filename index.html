@@ -87,28 +87,7 @@
             </div>
             <div class="chanBaiViet">Nút tiếp theo hoặc Trang trước</div>
             <div class="maTheoDoi">
-                <span style="font-size: 16px; color: #eeeeee; margin-right: 5px;">CZS:</span>
-    <span id="view-count" style="font-size: 16px; font-weight: bold; color: #eeeeee;">Đang tải...</span>
-    <script>
-    function loadPageViews() {
-        // Tên định danh độc nhất dựa theo web của bạn
-        const siteId = "vdtuan29_github_io_counter"; // Có thể sửa lại 
-        
-        fetch(`https://getloli.com{siteId}`)
-            .then(response => response.json())
-            .then(data => {
-                // Đổ số lượt xem thực tế vào thẻ span
-                document.getElementById("view-count").innerText = data.value;
-            })
-            .catch(error => {
-                console.error("Lỗi tải lượt xem:", error);
-                document.getElementById("view-count").innerText = "1";
-            });
-    }
-
-    // Tự động chạy khi trang tải xong
-    window.onload = loadPageViews;
-</script>
+                
             </div>
         </main>
         <footer>
