@@ -98,8 +98,11 @@ main{
     margin:15px auto;
     width: 100%;
 }
+.maTheoDoi{
+background:#dddddd;
+}
 footer{
-    background: beige;
+    background: #6e7a6e;
     width: 95%;
     margin: auto ;
     padding :30px 40px;
