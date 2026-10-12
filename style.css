@@ -94,11 +94,12 @@ main{
     color :#888;
 }
 .chanBaiViet{
-    background: beige ;/* Đã xóa sự tạm thời*/
-    margin:15px auto;
+    background: beige;;/* Đã xóa sự tạm thời*/
+    margin: 15px auto ;
     width: 100%;
     font-weight :bold;
     padding :15px;
+    font-size :17px;
 }
 .chanBaiViet a{
     text-decoration :none;
