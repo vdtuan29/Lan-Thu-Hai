@@ -1,0 +1,118 @@
+*{
+    box-sizing:border-box;  /* padding và border sẽ được tính gộp vào bên trong width */
+    padding:0;
+    margin:0;
+}
+body{
+    width: 100%;
+    overflow-x:hindden;
+    background-color:#fcf9f2;
+    font-family:sans-serif;
+}
+header{
+    background :white;
+    width: 95%;
+    padding :0;
+    margin:auto;
+}
+.tieuDe{
+    background: beige;
+    width: 100%;
+    padding :5px 0;
+    margin:5px auto;
+}
+h2{
+    color : green ;
+    text-align: center ;
+}
+nav{
+    background: beige;
+    width: 100%;
+}
+nav ul{
+    list-style-type:none; /* Bỏ chấm tròn */
+    display : flex ; /* Dòng này và dòng dưới là để menu ngang */
+    overflow-x: auto ;
+    white-space:nowrap; /* Cấm xuống dòng*/
+    padding :15px 10px;
+}
+nav a{
+    text-decoration:none; /* Bỏ gạch chân*/
+    
+}
+nav li{
+    margin:0 15px; /* Khoảng cách các tiêu đề*/
+}
+nav a{
+    font-size:16px;
+    color :#4a6b4a;
+    font-weight:bold; /* Làm chữ đậm */
+}
+nav a:hover,nav a:active{
+    color :#2e4a2e;
+    border-bottom:2px solid 8fbc8f;
+}
+.quangCao{
+    background :beige;
+    width: 100%;
+    margin:15px auto; /* Khoảng cách với xung quanh và căn giữa */
+    border:1px dashed #ffcc00;
+}
+main{
+    background: white ;
+    width: 95%;
+    margin:auto;
+}
+.boXung{
+    width: 100%;
+    background: beige; /* Đã xóa */
+    padding :10px 0;
+}
+.danhNgon{
+    width: 95%; /* 95 của 95 */
+    background: white;
+    margin:0 auto 20px auto;
+    border-left:4px solid #a3b899;
+    border-radius:8px;
+    padding :20px;
+}
+.en{
+    font-size:18px;
+    font-weight:bold;
+    padding :8px;
+}
+.vi{
+    font-size:14px;
+    padding :8px;
+    font-style : italic ;
+    color :#6e7f6e;
+}
+.loiBinh{
+    font-size :12px;
+    padding :8px;
+    font-style : italic ;
+    color :#888;
+}
+.chanBaiViet{
+    background: beige ;/* Đã xóa sự tạm thời*/
+    margin:15px auto;
+    width: 100%;
+}
+footer{
+    background: beige;
+    width: 95%;
+    margin: auto ;
+    padding :30px 40px;
+    text-align : center ;
+    margin-top :15px;
+    font-size :13px;
+}
+footer . footer-links{
+    margin-top:10px;
+}
+footer a{
+    text-decoration :none;
+    margin:0 5px;
+    font-weight : bold ;
+    color :#4a6b4a;
+}
