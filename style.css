@@ -99,10 +99,10 @@ main{
     width: 100%;
 }
 .maTheoDoi{
-background:#dddddd;
+background:lightgray;
 }
 footer{
-    background: #6e7a6e;
+    background: silver;
     width: 95%;
     margin: auto ;
     padding :30px 40px;
