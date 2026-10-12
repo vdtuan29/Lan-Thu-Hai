@@ -97,9 +97,17 @@ main{
     background: beige ;/* Đã xóa sự tạm thời*/
     margin:15px auto;
     width: 100%;
+    font-weight :bold;
+    padding :15px;
+}
+.chanBaiViet a{
+    text-decoration :none;
+    color : #4a6b4a;
 }
 .maTheoDoi{
-background:lightgray;
+    background: lightgray;
+    color :#dddddd;
+    text-align: center ;
 }
 footer{
     background: silver;
@@ -109,6 +117,7 @@ footer{
     text-align : center ;
     margin-top :15px;
     font-size :13px;
+    color : black ;
 }
 footer . footer-links{
     margin-top:10px;
