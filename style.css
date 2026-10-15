@@ -68,7 +68,7 @@ main{
 .danhNgon{
     margin:20px;
     background: white ;
-    border-left :4px solid green ;
+    border-left :4px solid #a3b899;
     border-radius :8px;
     padding :20px;
 }
