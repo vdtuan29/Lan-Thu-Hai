@@ -1,131 +1,124 @@
 *{
-    box-sizing:border-box;  /* padding và border sẽ được tính gộp vào bên trong width */
+    box-sizing:border-box;
     padding:0;
-    margin:0;
+    margin:0; /* Những cái này phải có đủ để căn chỉnh tự động . hay còn gọi là xóa bỏ khoảng cách mặc định */
 }
 body{
+    background: white ;
     width: 100%;
-    overflow-x:hindden;
-    background-color:#fcf9f2;
-    font-family:sans-serif;
+    
+    /* Body viết trước xong mới phát hiện ra *{} */
 }
+
 header{
-    background :white;
-    width: 95%;
-    padding :0;
-    margin:auto;
+    background: white;/*Màu nền header phải trắng để có vạch phân biệt giữa tiêu đề và menu*/
+    width: 100%;
 }
 .tieuDe{
     background: beige;
-    width: 100%;
-    padding :5px 0;
-    margin:5px auto;
-}
-h2{
+    margin:5px;
+    text-align : center ;
     color : green ;
-    text-align: center ;
+    padding:5px; /* Thêm vào sau vì trước đó thấy nó hẹp mà chưa biết nguyên nhân */
 }
+/* Tiêu đề và nav phải tách biệt để khi trượt menu thì tiêu đề không trượt theo*/
+
 nav{
     background: beige;
-    width: 100%;
+    margin:5px;
+    padding:5px; /* padding là khoảng cách bên trong khối */
 }
 nav ul{
-    list-style-type:none; /* Bỏ chấm tròn */
-    display : flex ; /* Dòng này và dòng dưới là để menu ngang */
-    overflow-x: auto ;
-    white-space:nowrap; /* Cấm xuống dòng*/
-    padding :15px 10px;
+    list-style-type:none;/*Bỏ chấm tròn*/
 }
 nav a{
-    text-decoration:none; /* Bỏ gạch chân*/
-    
+    text-decoration :none;/*Bỏ gạch chân*/
+}
+nav ul{
+    display : flex ;
+    overflow-x:none;/* Hai dòng này kết hợp là để menu ngang*/
+    white-space:nowrap; /* Cấm xuống dòng */
 }
 nav li{
-    margin:0 15px; /* Khoảng cách các tiêu đề*/
+    margin:0 15px;/*Khoảng cách các danh mục*/
+    
 }
-nav a{
+nav ul li a{
+    font-weight:bold;
+    color: green;
     font-size:16px;
-    color :#4a6b4a;
-    font-weight:bold; /* Làm chữ đậm */
 }
-nav a:hover,nav a:active{
-    color :#2e4a2e;
-    border-bottom:2px solid 8fbc8f;
+nav ul{
+    overflow-x: auto; /* Cái này mới chính xác là làm cho menu vuốt ngang mà mọi thứ không chạy theo */
 }
 .quangCao{
-    background :beige;
-    width: 100%;
-    margin:15px auto; /* Khoảng cách với xung quanh và căn giữa */
+    background: beige;
+    margin:15px;
+    padding :5px;
     border:1px dashed #ffcc00;
 }
 main{
     background: white ;
-    width: 95%;
-    margin:auto;
-}
-.boXung{
     width: 100%;
-    background: beige; /* Đã xóa */
-    padding :10px 0;
+}
+.bao{
+    background: beige ;
+    margin:5px;
 }
 .danhNgon{
-    width: 95%; /* 95 của 95 */
-    background: white;
-    margin:0 auto 20px auto;
-    border-left:4px solid #a3b899;
-    border-radius:8px;
+    margin:20px;
+    background: white ;
+    border-left :4px solid green ;
+    border-radius :8px;
     padding :20px;
 }
 .en{
-    font-size:18px;
-    font-weight:bold;
-    padding :8px;
+    font-weight : bold ;
+    font-size :18px;
+    padding : 8px ;
 }
 .vi{
-    font-size:14px;
-    padding :8px;
+    font-size :14px;
     font-style : italic ;
     color :#6e7f6e;
+    padding : 8px ;
 }
-.loiBinh{
+.binh{
     font-size :12px;
-    padding :8px;
-    font-style : italic ;
+    font-style :italic;
     color :#888;
+    padding : 8px ;
 }
-.chanBaiViet{
-    background: beige;;/* Đã xóa sự tạm thời*/
-    margin: 15px auto ;
-    width: 100%;
+.lienKet{
     font-weight :bold;
-    padding :15px;
-    font-size :17px;
+    font-size :16px ;
+    display :flex ;
+    justify-content :space-between;
+    padding:5px;
 }
-.chanBaiViet a{
-    text-decoration :none;
-    color : #4a6b4a;
+.lienKet li{
+    list-style-type: none ;
 }
-.maTheoDoi{
+.lienKet a{
+    color :green ;
+    text-decoration:none;
+}
+.theoDoi{
     background: lightgray;
-    color :#dddddd;
-    text-align: center ;
+    margin:5px;
+    color:#dddddd;
+    text-align:center;
 }
 footer{
     background: silver;
-    width: 95%;
-    margin: auto ;
-    padding :30px 10px;
-    text-align : center ;
-    margin-top :15px;
+    margin:5px;
     font-size :13px;
-    color : black ;
+    text-align:center;
+    padding :10px;
 }
-footer . footer-links{
-    margin-top:10px;
-}
-footer a{
-    text-decoration :none;
-    margin:0 5px;
-    font-weight : bold ;
+a{
+    text-decoration:none;
+    font-weight:bold;
     color :#4a6b4a;
+    padding:5px;
 }
