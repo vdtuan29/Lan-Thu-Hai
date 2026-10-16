@@ -94,7 +94,7 @@ main{
     font-size :14px ;
     display :flex ;
     justify-content :space-between;
-    padding:3px;
+    padding:0;
     background:beige;
     margin:3px;
     white-space:nowrap;
