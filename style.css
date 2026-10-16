@@ -96,6 +96,7 @@ main{
     justify-content :space-between;
     padding:5px;
     background:beige;
+    margin:5px;
 }
 .lienKet li{
     list-style-type: none ;
