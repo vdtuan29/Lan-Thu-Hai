@@ -40,7 +40,7 @@ nav ul{
     white-space:nowrap; /* Cấm xuống dòng */
 }
 nav li{
-    margin:0 11px;/*Khoảng cách các danh mục*/
+    margin:0 9px;/*Khoảng cách các danh mục*/
     
 }
 nav ul li a{
