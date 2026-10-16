@@ -91,7 +91,7 @@ main{
 }
 .lienKet{
     font-weight :bold;
-    font-size :16px ;
+    font-size :14px ;
     display :flex ;
     justify-content :space-between;
     padding:3px;
