@@ -40,7 +40,7 @@ nav ul{
     white-space:nowrap; /* Cấm xuống dòng */
 }
 nav li{
-    margin:0 15px;/*Khoảng cách các danh mục*/
+    margin:0 13px;/*Khoảng cách các danh mục*/
     
 }
 nav ul li a{
@@ -97,6 +97,7 @@ main{
     padding:5px;
     background:beige;
     margin:5px;
+    white-space:nowrap;
 }
 .lienKet li{
     list-style-type: none ;
