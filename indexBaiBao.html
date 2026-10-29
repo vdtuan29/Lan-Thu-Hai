@@ -71,6 +71,28 @@ Edison cried for hours after reading that letter. Later, he wrote in his diary: 
             </div> <!-- div này là div bao-->
             <div class="theoDoi">
     
+
+    <p>CZS: <span id="countB">0</span> </p>
+
+    <script>
+        // 1. Kiểm tra xem trình duyệt có hỗ trợ localStorage không
+        if (localStorage) {
+            // 2. Lấy giá trị hiện tại từ localStorage, nếu chưa có thì mặc định là 0
+            let pageReads = localStorage.getItem("page_view_countB") || 0;
+
+            // 3. Tăng số lần tải lên 1
+            pageReads = parseInt(pageReads) + 1;
+
+            // 4. Lưu lại giá trị mới vào localStorage
+            localStorage.setItem("page_view_countB", pageReads);
+
+            // 5. Hiển thị số lần tải lên màn hình
+            document.getElementById("countB").innerText = pageReads;
+        } else {
+            console.log("Trình duyệt của bạn không hỗ trợ localStorage.");
+        }
+    </script>
+
     
             </div> <!-- div này là div theo dõi -->
         </main>
